@@ -49,6 +49,7 @@ Zona Interna 3,Contabilidad (Finanzas),40,192.168.40.0/29,192.168.40.1
 |      |   +-----+ +-----+  +-----+  +-----+             |
 |      |                                                 |
 +------+-------------------------------------------------+
+```text
 
 ![Diagrama en Cisco Packet Tracer](<WhatsApp Image 2026-04-29 at 20.04.59.jpeg>)
 
