@@ -28,7 +28,7 @@ Zona Interna 3,Contabilidad (Finanzas),40,192.168.40.0/29,192.168.40.1
 ## 4. Diagrama de Conexiones 
  El flujo de datos se gestiona a través de un enlace Trunk que conecta el Router con el Switch Virtual, distribuyendo el tráfico etiquetado a cada nodo:
 
-
+- `-
  +-------------------------------------------------+
        |                  HIPERVISOR (HOST)              |
        |                                                 |
