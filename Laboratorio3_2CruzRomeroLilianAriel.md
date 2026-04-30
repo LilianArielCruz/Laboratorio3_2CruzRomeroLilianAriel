@@ -25,11 +25,10 @@ A continuación se detalla la jerarquía de red implementada para la segmentaci�
 * Zona Interna 2,Ventas (Operaciones),30,192.168.30.0/27,192.168.30.1
 * Zona Interna 3,Contabilidad (Finanzas),40,192.168.40.0/29,192.168.40.1
 
-```markdown
 ## 4. Diagrama de Conexiones
 El flujo de datos se gestiona a través de un enlace Trunk que conecta el Router con el Switch Virtual:
 
-```text
+```
        +-------------------------------------------------+
        |                  HIPERVISOR (HOST)              |
        |                                                 |
@@ -50,6 +49,7 @@ El flujo de datos se gestiona a través de un enlace Trunk que conecta el Router
 |      |   +-----+ +-----+  +-----+  +-----+             |
 |      |                                                 |
 +------+-------------------------------------------------+
+```
 
 ![Diagrama en Cisco Packet Tracer](<WhatsApp Image 2026-04-29 at 20.04.59.jpeg>)
 
