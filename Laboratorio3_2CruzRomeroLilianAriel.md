@@ -18,15 +18,16 @@ Este informe detalla la implementación de una red segmentada mediante VLANs (Vi
 ## 3. Esquema Logico de organizacion 
 A continuación se detalla la jerarquía de red implementada para la segmentación departamental:
 
-Nivel Lógico,Departamento / Zona,ID VLAN,Subred Asociada,Gateway (IP Router)
-Núcleo (Gateway),Infraestructura Central,--,N/A,N/A
-Zona Perimetral,DMZ (Servidores),10,192.168.10.0/29,192.168.10.1
-Zona Interna 1,TI (Administración),20,192.168.20.0/29,192.168.20.1
-Zona Interna 2,Ventas (Operaciones),30,192.168.30.0/27,192.168.30.1
-Zona Interna 3,Contabilidad (Finanzas),40,192.168.40.0/29,192.168.40.1
+* Nivel Lógico,Departamento / Zona,ID VLAN,Subred Asociada,Gateway (IP Router)
+* Núcleo (Gateway),Infraestructura Central,--,N/A,N/A
+* Zona Perimetral,DMZ (Servidores),10,192.168.10.0/29,192.168.10.1
+* Zona Interna 1,TI (Administración),20,192.168.20.0/29,192.168.20.1
+* Zona Interna 2,Ventas (Operaciones),30,192.168.30.0/27,192.168.30.1
+* Zona Interna 3,Contabilidad (Finanzas),40,192.168.40.0/29,192.168.40.1
 
-## 4. Diagrama de Conexiones 
- El flujo de datos se gestiona a través de un enlace Trunk que conecta el Router con el Switch Virtual, distribuyendo el tráfico etiquetado a cada nodo:
+```markdown
+## 4. Diagrama de Conexiones
+El flujo de datos se gestiona a través de un enlace Trunk que conecta el Router con el Switch Virtual:
 
 ```text
        +-------------------------------------------------+
@@ -49,7 +50,6 @@ Zona Interna 3,Contabilidad (Finanzas),40,192.168.40.0/29,192.168.40.1
 |      |   +-----+ +-----+  +-----+  +-----+             |
 |      |                                                 |
 +------+-------------------------------------------------+
-```text
 
 ![Diagrama en Cisco Packet Tracer](<WhatsApp Image 2026-04-29 at 20.04.59.jpeg>)
 
